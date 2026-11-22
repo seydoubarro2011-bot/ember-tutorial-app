@@ -1,8 +1,11 @@
 
-import { pageTitle } from 'ember-page-title';
+import NavBar from 'supper-rentals/components/nav-bar';
 
 <template>
-  {{pageTitle "SuperRentals"}}
-
-  {{outlet}}
+  <div class="container">
+    <NavBar />
+    <div class="body">
+      {{outlet}}
+    </div>
+  </div>
 </template>
