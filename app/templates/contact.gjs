@@ -1,10 +1,8 @@
 
 import { LinkTo } from '@ember/routing';
 import Jumbo from 'supper-rentals/components/jumbo';
-import NavBar from 'supper-rentals/components/nav-bar';
 
 <template>
-  <NavBar />
   <Jumbo>
     <h2>Contact Us</h2>
     <p>
