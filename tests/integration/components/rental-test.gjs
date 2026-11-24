@@ -18,4 +18,14 @@ module('Integration | Component | rental', function (hooks) {
     assert.dom('article .detail.bedrooms').includesText('15');
     assert.dom('article .image').exists();
   });
+
+  test('it renders a map for the rental property', async function (assert) {
+    await render(<template><Rental /></template>);
+
+    assert.dom('article .map').exists();
+    assert.dom('article .map img').exists();
+    assert
+      .dom('article .map img')
+      .hasAttribute('alt', 'A map of Grand Old Mansion');
+  });
 });

@@ -3,8 +3,9 @@
 module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'supper-rentals',
+    TOMTOM_ACCESS_TOKEN:process.env.TOMTOM_ACCESS_TOKEN || '',
     environment,
-    rootURL: '/',
+    rootURL: '/', 
     locationType: 'history',
     EmberENV: {
       EXTEND_PROTOTYPES: false,
